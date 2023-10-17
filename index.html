@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //Class and object
+    //class is a template/blue print by which object followes
+    //class is a collection of attributes and method/function
+    class Student{
+        //constructor
+        constructor(name,age){
+            this.name = name;
+            this.age = age
+        }
+        student_details(){
+            return "The student name is " + this.name + " and the student age is "+this.age;
+        }
+    }
+    var s1 = new Student("Suha", "20")
+    console.log(s1.student_details())
+
+
+    //--------
+    class Mobile{
+        display(){
+            console.log("This is mobile function");
+        }
+    }
+    var m1 = new Mobile()
+    m1.display()
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+var a = 10;
+    var b = 60;
+    var c = a + b;
+    // document.write("The value of a is "+a);
+    // console.log("The value is "+a);
+    document.write("<br>");
+    document.write("<h1>The sum is </h1>"+ c);
+
+
+
+    var n = document.getElementById('suhanum1').value
+    //  console.log("The value u have entered is "+ n);
+    //  document.write("The value u have entered is "+n);
+    document.getElementById('suhap').innerHTML = "The value you have entered is "+n;
+
+
+
+
+
+
+<body>
+ num1 = <input type="text"  id="suhanum1">
+ <br>
+ <br>
+ num2 = <input type="text" id="suhanum2">
+ <br>
+ <br>
+ <button type="button" onclick="suhafunc()">SUM</button>
+<br>
+<p id="showresult"></p>
+    
+
+<script>
+
+    //DOM(Document Object Model): it is an API used to manipulate node/data in HTML or XML
+    //1. Element Access methods in DOM
+    /*
+    1.document.getElementById()
+    2.document.getElementByTagName()
+    3.document.getElementsByClassName()
+    4.document.querySelector()
+    5.document.querySelectorAll()
+    */
+   function suhafunc(){
+    var n1 = document.getElementById('suhanum1').value;
+    var n2 = document.getElementById('suhanum2').value;
+    var summ = parseInt(n1) + parseInt(n2);
+    document.getElementById('showresult').innerHTML = "The sum is : "+summ;
+
+
+   }
+
+
+
+</script>
+</body>
+
+#-------------------------------------------------------------------------
+<body>
+<div id="wrapper">
+<center>
+    //C = (°F - 32) × 5/9
+    <h1>Weather Forecasting Application</h1>
+    <h2>Enter Value for Fahrenheit </h2>
+    <input type="text" placeholder="Enter Fahrenheit" id="suhaid">
+    <br>
+    <br>
+    <button type="button" onclick="func()">CONVERT</button>
+    <br>
+    <br>
+    <p id="showresult">  </p>
+</center>
+</div>    
+
+<script>
+function func(){
+    var f = document.getElementById('suhaid').value;
+    var c = ((f - 32) * 5/9);
+    document.getElementById('showresult').innerHTML = "The celsius value is: "+ c;
+}
+</script>
+</body>
